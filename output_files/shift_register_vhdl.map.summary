@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sat Jun 15 14:03:36 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : shift_register_vhdl
+Top-level Entity Name : de10_top
+Family : MAX 10
+Total logic elements : 8
+    Total combinational functions : 0
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 20
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

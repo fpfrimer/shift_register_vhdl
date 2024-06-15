@@ -1,0 +1,52 @@
+|de10_top
+LEDR[9] << single_bit_shift_reg:u1.data_out
+LEDR[8] << <GND>
+LEDR[7] << single_bit_shift_reg:u1.data[7]
+LEDR[6] << single_bit_shift_reg:u1.data[6]
+LEDR[5] << single_bit_shift_reg:u1.data[5]
+LEDR[4] << single_bit_shift_reg:u1.data[4]
+LEDR[3] << single_bit_shift_reg:u1.data[3]
+LEDR[2] << single_bit_shift_reg:u1.data[2]
+LEDR[1] << single_bit_shift_reg:u1.data[1]
+LEDR[0] << single_bit_shift_reg:u1.data[0]
+SW[9] => single_bit_shift_reg:u1.data_in
+SW[8] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[1] => single_bit_shift_reg:u1.nrst
+SW[0] => single_bit_shift_reg:u1.clk
+
+
+|de10_top|single_bit_shift_reg:u1
+clk => data_reg[7].CLK
+clk => data_reg[6].CLK
+clk => data_reg[5].CLK
+clk => data_reg[4].CLK
+clk => data_reg[3].CLK
+clk => data_reg[2].CLK
+clk => data_reg[1].CLK
+clk => data_reg[0].CLK
+nrst => data_reg[7].ACLR
+nrst => data_reg[6].ACLR
+nrst => data_reg[5].ACLR
+nrst => data_reg[4].ACLR
+nrst => data_reg[3].ACLR
+nrst => data_reg[2].ACLR
+nrst => data_reg[1].ACLR
+nrst => data_reg[0].ACLR
+data_in => data_reg[0].DATAIN
+data_out <= data_reg[7].DB_MAX_OUTPUT_PORT_TYPE
+data[7] <= data_reg[7].DB_MAX_OUTPUT_PORT_TYPE
+data[6] <= data_reg[6].DB_MAX_OUTPUT_PORT_TYPE
+data[5] <= data_reg[5].DB_MAX_OUTPUT_PORT_TYPE
+data[4] <= data_reg[4].DB_MAX_OUTPUT_PORT_TYPE
+data[3] <= data_reg[3].DB_MAX_OUTPUT_PORT_TYPE
+data[2] <= data_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+data[1] <= data_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+data[0] <= data_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
